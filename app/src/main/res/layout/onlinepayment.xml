@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/paymentback"
+    android:padding="20dp">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/Back_arrow1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="start"
+        android:src="@drawable/arrow"
+        android:contentDescription="Back Arrow"
+        />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textColor="@color/black"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <!-- QR Code Container (Now Centered) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <!-- Amount -->
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$38.45"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"/>
+
+        <!-- QR Code -->
+        <ImageView
+            android:id="@+id/imgqrcode"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:contentDescription="QR Code"
+            android:scaleType="fitCenter"
+            android:src="@drawable/scanner"
+            android:layout_gravity="center"/>
+
+        <!-- Instruction -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan the code to pay"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
